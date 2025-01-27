@@ -33,7 +33,6 @@ function startTrainer() {
     inputArea.value = "";
     inputArea.disabled = false;
     inputArea.focus();
-    trainerContainer.classList.remove("hidden");
 
     // Reset stats
     startTime = Date.now();
@@ -45,14 +44,11 @@ function startTrainer() {
 
 // Restart the trainer
 function restartTrainer() {
-    targetString = "";
     inputArea.value = "";
-    inputArea.disabled = true;
-    targetText.textContent = "";
+    inputArea.disabled = false;
     wpmDisplay.textContent = "0";
     accuracyDisplay.textContent = "100%";
     clearInterval(timer);
-    trainerContainer.classList.add("hidden");
 }
 
 // Calculate WPM
