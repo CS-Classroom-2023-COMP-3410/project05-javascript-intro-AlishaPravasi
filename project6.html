@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Periodic Table</title>
+    <link rel="stylesheet" href="css/project6.css">
+</head>
+<body>
+    <h1>Interactive Periodic Table</h1>
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search by name, symbol, or atomic number" />
+    </div>
+    <div id="info-container" class="info-container hidden">
+        <h2 id="element-name"></h2>
+        <p>Symbol: <span id="element-symbol"></span></p>
+        <p>Atomic Number: <span id="atomic-number"></span></p>
+        <p>Group: <span id="element-group"></span></p>
+    </div>
+    <div id="periodic-table" class="periodic-table"></div>
+    <script src="js/project6.js"></script>
+</body>
+</html>
